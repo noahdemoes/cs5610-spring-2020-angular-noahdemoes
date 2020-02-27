@@ -1,6 +1,12 @@
 package com.example.bccServer.models;
+import javax.persistence.*;
 
+@Entity
+@Table(name="bccsurvey")
 public class answer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private String lightRoastScore;
     private String mediumRoastScore;
     private String darkRoastScore;
