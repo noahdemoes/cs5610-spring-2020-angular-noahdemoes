@@ -1,89 +1,46 @@
 package com.example.bccServer.models;
 
 public class answer {
-    private String bootstrapslider1;
-    private String bootstrapslider2;
-    private String bootstrapslider3;
-    private String brewMethod;
-    private String coffeeTake;
-    private String position;
-    private String coffeeRank;
+    private String lightRoastScore;
+    private String mediumRoastScore;
+    private String darkRoastScore;
     private String roastPreference;
-    private String flavors;
+    private String coffeeTypePreference;
+    private String bccRoastPreference;
+    private String mostImportantFlavor;
 
-    public answer(String bootstrapslider1) {
-        this.bootstrapslider1 = bootstrapslider1;
-    }
-
-    public answer() {
-    }
-
-    public answer(String bootstrapslider1, String bootstrapslider2, String bootstrapslider3, String brewMethod, String coffeeTake, String position, String coffeeRank, String roastPreference, String flavors) {
-        this.bootstrapslider1 = bootstrapslider1;
-        this.bootstrapslider2 = bootstrapslider2;
-        this.bootstrapslider3 = bootstrapslider3;
-        this.brewMethod = brewMethod;
-        this.coffeeTake = coffeeTake;
-        this.position = position;
-        this.coffeeRank = coffeeRank;
+    public answer(String lightRoastScore, String mediumRoastScore, String darkRoastScore, String roastPreference, String coffeeTypePreference, String bccRoastPreference, String mostImportantFlavor) {
+        this.lightRoastScore = lightRoastScore;
+        this.mediumRoastScore = mediumRoastScore;
+        this.darkRoastScore = darkRoastScore;
         this.roastPreference = roastPreference;
-        this.flavors = flavors;
+        this.coffeeTypePreference = coffeeTypePreference;
+        this.bccRoastPreference = bccRoastPreference;
+        this.mostImportantFlavor = mostImportantFlavor;
     }
 
-    public String getBootstrapslider1() {
-        return bootstrapslider1;
+    public String getLightRoastScore() {
+        return lightRoastScore;
     }
 
-    public void setBootstrapslider1(String bootstrapslider1) {
-        this.bootstrapslider1 = bootstrapslider1;
+    public void setLightRoastScore(String lightRoastScore) {
+        this.lightRoastScore = lightRoastScore;
     }
 
-    public String getBootstrapslider2() {
-        return bootstrapslider2;
+    public String getMediumRoastScore() {
+        return mediumRoastScore;
     }
 
-    public void setBootstrapslider2(String bootstrapslider2) {
-        this.bootstrapslider2 = bootstrapslider2;
+    public void setMediumRoastScore(String mediumRoastScore) {
+        this.mediumRoastScore = mediumRoastScore;
     }
 
-    public String getBootstrapslider3() {
-        return bootstrapslider3;
+    public String getDarkRoastScore() {
+        return darkRoastScore;
     }
 
-    public void setBootstrapslider3(String bootstrapslider3) {
-        this.bootstrapslider3 = bootstrapslider3;
-    }
-
-    public String getBrewMethod() {
-        return brewMethod;
-    }
-
-    public void setBrewMethod(String brewMethod) {
-        this.brewMethod = brewMethod;
-    }
-
-    public String getCoffeeTake() {
-        return coffeeTake;
-    }
-
-    public void setCoffeeTake(String coffeeTake) {
-        this.coffeeTake = coffeeTake;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public String getCoffeeRank() {
-        return coffeeRank;
-    }
-
-    public void setCoffeeRank(String coffeeRank) {
-        this.coffeeRank = coffeeRank;
+    public void setDarkRoastScore(String darkRoastScore) {
+        this.darkRoastScore = darkRoastScore;
     }
 
     public String getRoastPreference() {
@@ -94,11 +51,27 @@ public class answer {
         this.roastPreference = roastPreference;
     }
 
-    public String getFlavors() {
-        return flavors;
+    public String getCoffeeTypePreference() {
+        return coffeeTypePreference;
     }
 
-    public void setFlavors(String flavors) {
-        this.flavors = flavors;
+    public void setCoffeeTypePreference(String coffeeTypePreference) {
+        this.coffeeTypePreference = coffeeTypePreference;
+    }
+
+    public String getBccRoastPreference() {
+        return bccRoastPreference;
+    }
+
+    public void setBccRoastPreference(String bccRoastPreference) {
+        this.bccRoastPreference = bccRoastPreference;
+    }
+
+    public String getMostImportantFlavor() {
+        return mostImportantFlavor;
+    }
+
+    public void setMostImportantFlavor(String mostImportantFlavor) {
+        this.mostImportantFlavor = mostImportantFlavor;
     }
 }
